@@ -14,5 +14,11 @@ jobs:
     steps:
       - run:
           name: "Test"
-          command: echo "test complete"		  
+          command: echo "test complete"
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - build
+      - test
      
