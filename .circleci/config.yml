@@ -13,7 +13,7 @@ jobs:
           command: |
             # replace this with your build/deploy check (i.e. current branch is "release")
             if [[ true ]]; then
-              curl --user ${CIRCLE_API_USER_TOKEN}: \
+              curl --user {c3dae2ea1e571f9b8dc50175f0ca920502856068}: \
                 --data 'build_parameters[CIRCLE_JOB]=build' \
                 --data revision=$CIRCLE_SHA1 \
                 https://circleci.com/api/v1.1/project/github/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/tree/$CIRCLE_BRANCH
