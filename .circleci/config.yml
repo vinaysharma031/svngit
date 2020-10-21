@@ -9,6 +9,8 @@ jobs:
           name: "Testing"
           command: echo "Hi"
   test:
+    machine:
+      image: ubuntu-2004:202010-01
     steps:
       - run:
           name: "Test"
